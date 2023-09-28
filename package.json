@@ -1,0 +1,61 @@
+{
+  "name": "ts-code-enum",
+  "version": "0.0.2",
+  "description": "A TypeScript string enum for compile-time safety when working with event.code",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.ts"
+    },
+    "./const": {
+      "types": "./const/dist/const.d.ts",
+      "import": "./const/dist/const.ts"
+    }
+  },
+  "files": [
+    "dist/**/*",
+    "const/**/*"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig-const.json",
+    "scrape": "ts-node-esm scripts/scrape.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HubertY/ts-code-enum.git"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "keycodes",
+    "keyevent",
+    "code",
+    "key",
+    "enum",
+    "ts",
+    "event.which",
+    "event.code",
+    "event.keycode"
+  ],
+  "author": {
+    "name": "Hubert Yuan",
+    "email": "yuanhubert@gmail.com",
+    "url": "https://hubertyuan.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HubertY/ts-code-enum/issues"
+  },
+  "homepage": "https://github.com/HubertY/ts-code-enum#readme",
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/cheerio": "^0.22.32",
+    "@types/request-promise": "^4.1.48",
+    "cheerio": "^1.0.0-rc.12",
+    "request-promise": "^4.2.6",
+    "ts-node": "^10.9.1"
+  }
+}

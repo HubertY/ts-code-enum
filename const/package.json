@@ -1,0 +1,10 @@
+{
+    "name": "ts-code-enum-const",
+    "version": "0.0.1",
+    "private": true,
+    "description": "A TypeScript string const enum for compile-time safety when working with event.code",
+    "type": "module",
+    "main": "dist/const.js",
+    "types": "dist/const.d.ts",
+    "license": "MIT"
+}
