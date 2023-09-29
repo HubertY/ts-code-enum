@@ -1,4 +1,4 @@
-export declare enum KBCode {
+export declare const enum KBCode {
     Escape = "Escape",
     Digit1 = "Digit1",
     Digit2 = "Digit2",

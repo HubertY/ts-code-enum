@@ -61,7 +61,7 @@ async function main() {
         everything.map(s => `    ${s} = '${s}'`).join(",\n"),
         "}"
     ].join("\n");
-    const updated = await updateFile(WRITE_PATH, writeData) && await updateFile(WRITE_PATH_CONST, writeData);
+    const updated = await updateFile(WRITE_PATH, writeData) && await updateFile(WRITE_PATH_CONST, writeDataConst);
     if (updated) {
         console.info("Updated source files.")
     }

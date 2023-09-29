@@ -1,6 +1,6 @@
 {
   "name": "ts-code-enum",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A TypeScript string enum for compile-time safety when working with event.code",
   "type": "module",
   "main": "./dist/index.js",
